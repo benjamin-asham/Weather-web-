@@ -1,0 +1,142 @@
+main{
+    display: flex;
+    justify-content:space-between
+}
+#left {
+  /* background-image: url("/imgs/nasa-Q1p7bh3SHj8-unsplash.jpg"); */
+  background:linear-gradient(rgba(0, 0, 0, 0.66)),url(/imgs/nasa-Q1p7bh3SHj8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width:60%;
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px;
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-left p{
+    background-color:transparent;
+    border: white 2px solid;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+.contant h1{
+    font-size:30px;
+    color: rgb(255, 255, 255);
+}
+.contant .line{
+    background-color: white;
+    height: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+.contant input{
+    background-color:transparent;
+    width: 70%;
+    border: white 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.contant {
+  display: flex;
+  flex-direction: column; /* العناصر فوق بعض */
+  justify-content: center; /* في النص رأسيًا */
+  align-items: center;     /* في النص أفقيًا */
+  gap:30px;
+  height: 80%;
+}
+#cards{
+    width: 40%;
+    height: 50%;
+    margin: 250px 20px;
+    border-radius: 25px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 10px;
+}
+#cards .line{
+    width: 5px;
+    background-color: black;
+    height:160px;
+}
+#cards .left h4{
+    font-size: 40px;
+}
+#cards .right p{
+    font-size: 18px;
+}
+.contant .se{
+    width: 70%;
+    text-align: center;
+}
+.contant .se button{
+    width:20%;
+    height: 90%;
+    border: white 2px solid;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.contant .se button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader .cloud {
+  width: 175px;
+  height: 80px;
+  background-image: 
+    radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0),
+    radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0),
+    radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0),
+    linear-gradient(#FFF 50px, transparent 0);
+  background-size: 50px 50px, 100px 76px, 50px 50px, 120px 40px;
+  background-position: 0px 30px, 37px 0px, 122px 30px, 25px 40px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#loader .cloud::after {
+  content: '';  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px; 
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #FF3D00;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
