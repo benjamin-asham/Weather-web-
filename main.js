@@ -32,7 +32,7 @@
     }
 
     function location1(weather) {
-      const box = `<p> ${weather.location.name}</p>`
+      const box = `<p>${weather.location.name}</p>`
       locationName.innerHTML = box
     }
 
@@ -74,5 +74,6 @@
 
     // تشغيل أول مرة
     getWeather()
+
 
 
